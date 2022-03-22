@@ -1,0 +1,2553 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("Fonts/Montserrat/Montserrat-Bold.ttf");
+    font-weight:700;
+}
+@font-face {
+    font-family: "Aileron";
+    src: url("Fonts/Aileron/Aileron-Bold.otf");
+    font-weight:700;
+}
+@font-face {
+    font-family: "Panton";
+    src: url("Fonts/panton/Panton-LightCaps.otf");
+    font-weight:300;
+}
+@font-face {
+    font-family: "Bauhaus";
+    src: url("Fonts/bauhaus-light-bt-cufonfonts/bauhauslightbt.ttf");
+    font-weight:300;
+}
+
+body{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+.chatbot{
+    position:fixed;
+    bottom:15px;
+    right:15px;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 10px 15px 20px;
+}
+.navbar-nav{
+    display:flex;
+    align-items:center;
+}
+.navbar-nav .nav-item+.nav-item{
+    margin-left:15px;
+}
+.navlinks .nav-link+.nav-link{
+    margin-left:10px;
+}
+.nav-link{
+    text-decoration: none;
+    color:#2F2F2F;
+    font-size:14px;
+    font-family:"Poppins";
+    font-weight:400;
+    
+}
+.search-icon{
+    color:#2F2F2F;
+    text-decoration: none;
+    padding-right:20px;
+}
+.contact-btn{
+    background-image: linear-gradient(to left,#FF7171,#E53F65);
+    border-width:0px;
+    border-radius:8px;
+    padding:10px 29px 10px 22px;
+    color:white;
+    font-family:"Poppins";
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+}
+.banner-container{
+    background-image:linear-gradient(to right,#21215C,#888D98);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px 10px 0px 30px;
+}
+.banner-list{ 
+    display: flex;
+    width: 390px;
+    align-items: center;
+    color: #FFFFFF;
+    padding-left: 0;
+    justify-content: space-between;
+    
+}
+.banner-item-1{
+    list-style-type: none;
+}
+.banner-list-item{
+    font-family:"Poppins";
+    font-size:14px;
+    font-weight:700;
+}
+.banner-desc-container{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    
+}
+.banner-desc{
+    color:white;
+    font-family:"Poppins";
+    font-size:56px;
+    font-weight:400;
+    max-width:644px;
+    margin:0;
+}
+.banner-sub-desc{
+    font-weight:700;
+}
+.know-more{
+    color:#FFFFFF;
+    font-family:"Poppins";
+    font-size:18px;
+    font-weight:400;
+    text-decoration:none;
+    cursor:pointer;
+}
+.down-arrow{
+    color:#000000;
+    font-weight:700!important;
+    font-size:10px;
+    text-decoration:none;
+    padding:20px;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    margin:40px 0px 0px 0px;
+    
+}
+.education-section{
+    /* background-image:linear-gradient(#F3F9FB,#F7F6F4); */
+    display: flex;
+    justify-content: center;
+    margin: -182px 0px;
+    position:relative;
+}
+.education-section::before{
+    position:absolute;
+    content:"";
+    background-image:linear-gradient(#F3F9FB,#F7F6F4);
+    width:100%;
+    height:80%;
+    z-index:-1;
+}
+.outer-circle {
+    border-radius: 50%;
+    height: 1300px;
+    width: 1300px;
+    border: 1px dotted #292929;
+    position: relative;
+    z-index:-1;
+  
+  }
+  .inner-circle1{
+    position: absolute;
+    border-radius: 50%;
+    height: 1100px;
+    width: 1100px;
+    border: 1px dotted #292929;
+    top: 19%;
+    left: 19%;
+    margin: -150px 0px 0px -150px;
+  }
+  .inner-circle2{
+    position: absolute;
+    border-radius: 50%;
+    height: 900px;
+    width: 900px;
+    border: 1px dotted #292929;
+    top: 27%;
+    left: 27%;
+    margin: -150px 0px 0px -150px;
+  }
+  .inner-circle3{
+    position: absolute;
+    border-radius: 50%;
+    height: 700px;
+    width: 700px;
+    border: 1px dotted #292929;
+    top: 35%;
+    left: 35%;
+    margin: -150px 0px 0px -150px;
+  }
+  .inner-circle4{
+    position: absolute;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    border: 1px dotted #292929;
+    top: 43%;
+    left: 43%;
+    margin: -150px 0px 0px -150px;
+  }
+  .inner-circle5{
+    position: absolute;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border: 1px dotted #292929;
+    top: 51%;
+    left: 51%;
+    margin: -150px 0px 0px -150px;
+  }
+  .education-head{
+    position:absolute;
+    top:37%;
+    left:15%;
+    font-family:"Poppins";
+    font-size:61px;
+    font-weight:300;
+    max-width:900px;
+    text-align:center;
+  }
+  .maths-img{
+    position: absolute;
+    content: "";
+    top: 29%;
+    left: 30%;
+}
+.pencil-img{
+    position: absolute;
+    content: "";
+    top: 26%;
+    left: 64%;
+}
+.react-img{
+    position: absolute;
+    content: "";
+    top: 43%;
+    left: 6%;
+}
+.video-img{
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 6%;
+}
+.books-img{
+    position: absolute;
+    content: "";
+    top: 66%;
+    left: 18%;
+}
+.bluecap-img{
+    position: absolute;
+    content: "";
+    top: 63%;
+    right: 42%;
+}
+.pendal-img{
+    position: absolute;
+    content: "";
+    top: 72%;
+    right: 12%;
+}
+.programs-section{
+    padding:40px 10px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    text-align:center;
+}
+.programs-main-head{
+    font-family:"Poppins";
+    font-size: 16px;
+    font-weight: 700;
+    margin:0;
+}
+.programs-head{
+    font-family:"Poppins";
+    font-size:40px;
+    font-weight:400;
+    margin:0;
+    /* padding-top:15px; */
+}
+.cards-container{
+    display:flex;
+    padding:35px 0px 47px 0px;
+}
+.cards-container .program-card+.program-card{
+    margin-left:15px;
+}
+.program-card{
+    width:250px;
+    height:180px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}
+.card-1{
+    background-image:linear-gradient(to left,#FF7171,#E53F65);
+    border-radius:4px;
+    border-top-left-radius: 41px;
+    
+}
+.card-2{
+    background-image: linear-gradient(to right,#EBCD24,#FF863B);
+    border-radius:4px;
+}
+.card-3{
+    background-image:linear-gradient(to right,#768AFF,#6E4DD8);
+    border-radius:4px;
+    border-top-right-radius: 41px;
+}
+.card-desc{
+    font-family:"Poppins";
+    font-size:18px;
+    font-weight:700;
+    color:white;
+    max-width:200px;
+}
+.right-arrow{
+    
+    text-decoration:none;
+    padding:10px; 
+    border-radius:40px;
+    font-weight:700!important;
+}
+.right-arrow-black{
+    color:black;
+}
+.right-arrow-white{
+    color:#FFFFFF;
+    padding-left:15px;
+    font-size:14px;
+}
+.card-1-arrow{
+    color:#E53F65;
+    background-color:white;
+}
+.card-2-arrow{
+    color:#FF863B;
+    background-color:white;
+}
+.card-3-arrow{
+    color:#6E4DD8;
+    background-color:white;
+}
+.programs-desc{
+    font-family:"Poppins";
+    font-size:22px;
+    font-weight:400;
+    padding-bottom:20px;
+    max-width:1017px;
+}
+.programs-btn{
+    font-family:"Poppins";  
+    font-size:20px;
+    font-weight:400;
+    color:white;
+    background-color: #2F2F2F;
+    padding:9px 20px 8px 25px;
+    border-width:0px;
+    border-radius:8px;
+    cursor:pointer;
+}
+.about-fiitjee-section{
+    background-color:#FFF0D5;
+    padding:80px 100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.about-fiitjee{
+    max-width:480px;
+    padding:68px 80px 55px 60px;
+    background-color:white;
+    border-radius:8px;
+}
+.about-main-head{
+    font-family:"Poppins";
+    font-size:40px;
+    font-weight:500;
+    margin:0;
+}
+.about-head{
+    font-family:"Poppins";
+    font-size:40px;
+    font-weight:700;
+    margin:0;
+}
+.about-desc{
+    font-family:"Poppins";
+    font-size:16px;
+    padding:15px 0px 30px 0px;
+    margin:0;
+}
+.about-know-more{
+    font-family:"Poppins";
+    font-size:20px;
+    font-weight:400;
+    color:black;
+    text-decoration: none;
+}
+.about-fiitjee-img-container{
+    text-align: center;
+    /* display:flex;
+    flex-direction: column;
+    align-items:flex-start; */
+}
+.about-img-desc{
+    font-family:"Poppins";
+    font-size:24px;
+    font-weight:400;
+    max-width:367px;
+    padding:30px 0px 18px 0px;
+}
+.about-bottom{
+    font-family:"Poppins";
+    font-size:20px;
+    font-weight: 300;
+    text-decoration: none;
+    color:black;
+}
+.admission-tests-section{
+    background-image: linear-gradient(#FFFFFF,#C6E1F5);
+    padding:70px 90px;
+}
+.admission-main-head{
+    font-family:"Poppins";
+    font-size:16px;
+    font-weight: 700;
+    margin:0;
+}
+.admission-head{
+    font-family:"Poppins";
+    font-size:40px;
+    font-weight: 300;
+    margin:0;
+    max-width:700px;
+}
+.pages-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+}
+.pagination .page-link+.page-link{
+    margin-left:10px;
+}
+/* .prev{
+    font-family: "Poppins";
+    font-size:20px;
+    font-weight:400;
+    color:#2F2F2F;
+    text-decoration: none;
+}
+.next{
+    font-family: "Poppins";
+    font-size:30px;
+    font-weight:400;
+    color:#2F2F2F;
+    text-decoration: none;
+} */
+.page-link{
+    font-family: "Poppins";
+    font-size:20px;
+    font-weight:400;
+    color:#2F2F2F;
+    text-decoration: none;
+}
+.page-link:hover{
+    font-size:30px;
+}
+.page-link:hover.next{
+    font-size:30px;
+}
+.tests-cards{
+    display:flex;
+    padding-top:45px;
+    /* justify-content: space-between; */
+}
+.tests-cards .test-card+.test-card{
+    margin-left:40px;
+}
+.test-card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.test-desc{
+    max-width:209px;
+    font-family: "Poppins";
+    font-size:20px;
+    font-weight:400;
+    color:#2F2F2F;
+}
+.date-card{
+    background-color:white;
+    padding:25px 65px;
+    /* width:160px;
+    height:120px; */
+    border-radius:20px;
+    text-align: center;
+}
+.test-date{
+    margin:0;
+    font-family:"Poppins";
+    font-size:47px;
+    font-weight:300;
+}
+.test-month{
+    font-family:"Poppins";
+    font-size:20px;
+    font-weight:700;
+    margin:0px 0px 5px 0px;
+}
+.left-days{
+    font-family:"Poppins";
+    font-size:12px;
+    font-weight:400;
+}
+.register-btn{
+    color:#2F2F2F;
+    background-color: transparent;
+    border:1px solid #707070;
+    border-radius:8px;
+    font-family:"Poppins";
+    font-size:15px;
+    font-weight:400;
+    padding:8px 25px;
+    cursor:pointer;
+}
+.why-fiitjee-section{
+    background-image: url("Images/why-fiitjee-bg.png");
+    background-repeat: no-repeat; 
+    /* width:1440px; */
+    padding:110px 0px 74px 160px;
+}
+.why-fiitjee-head{
+    font-family:"Poppins";
+    font-size:40px;
+    font-weight:400;
+    color:white;
+    margin:0;
+}
+.why-fiitjee-desc{
+    font-family:"Poppins";
+    font-size:18px;
+    font-weight:400;
+    color:white;
+    padding:10px 0px 16px 0px;
+    max-width:330px;
+    margin:0;
+}
+.view-more-btn{
+    background-color: white;
+    color:black;
+    padding:9px 28px;
+    border-width: 0px;
+    border-radius: 8px;
+    font-family:"Poppins";
+    font-size:20px;
+    font-weight:400;
+    cursor:pointer;
+}
+.our-programs-section{
+    background-image:linear-gradient(#F3F9FB,#F7F6F4);
+    padding:100px 70px 120px 70px;
+    display:flex;
+    flex-direction:column;
+}
+.our-programs-container{
+    display:flex;
+}
+.our-programs-container .our-programs-card+.our-programs-card{
+    margin-left:15px;
+}
+.our-programs-main-head{
+    font-family:"Poppins";
+    font-size:16px;
+    font-weight:700;
+    margin:0;
+}
+.our-programs-head{
+    font-family:"Poppins";
+    font-size:40px;
+    font-weight:300;
+    margin:0;
+    max-width: 459px;
+}
+.select-container{
+    border:none;
+    border-bottom:1px solid #434343;
+    background-color:transparent;
+    font-family:"Poppins";
+    font-size:22px;
+    font-weight:400;
+    margin:15px 0px 30px 0px;
+}
+.our-programs-view-btn{
+    background-color:#2F2F2F;
+    font-family:"Poppins";
+    font-size:20px;
+    font-weight:400;
+    padding:9px 25px;
+    border-width:0px;
+    border-radius:8px;
+    color:#FFFFFF;
+    cursor:pointer;
+}
+.clock-icon{
+    color:black;
+    text-decoration: none;
+    font-weight:700!important;
+    font-size:12px;
+}
+.our-programs-card{
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+    padding:30px 35px 25px 25px;
+    width:562px;
+}
+.dot{  
+    width:15px;
+    height:15px;
+    border-radius:40px;
+    display:inline-block;
+}
+.red{
+    background-color:#E94867;
+}
+.blue{
+    background-color: #5D96F2;
+}
+.our-programs-card-main-head{
+    font-family: "Poppins";
+    font-size:30px;
+    font-weight:700;
+    margin:0;
+}
+.our-programs-card-head{
+    font-family: "Poppins";
+    font-size:16px;
+    font-weight:400;
+    margin:0;
+}
+.our-programs-card-head2{
+    font-family: "Poppins";
+    font-size:14px;
+    font-weight:700;
+    margin:0px;
+}
+.our-programs-card-para{
+    font-family: "Poppins";
+    font-size:14px;
+    font-weight:400;
+}
+.our-programs-hr-line{
+    border:1px dashed rgb(112, 112, 112,0.2);
+}
+.our-programs-card-details{
+    display:flex;
+}
+.our-programs-card-details .our-programs-details+.our-programs-details{
+    margin-left:25px;
+}
+.our-programs-card-class{
+    font-family: "Poppins";
+    font-size:11px;
+    font-weight:700;
+}
+
+.our-programs-card-hrs{
+    font-family: "Poppins";
+    font-size:12px;
+    font-weight:700;
+}
+.program-date{
+    font-family: "Poppins";
+    font-size:16px;
+    font-weight:400;
+    margin:0;
+}
+.program-name{
+    font-family: "Poppins";
+    font-size:14px;
+    font-weight:700;
+    margin:0;
+}
+.program-date-container{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-top:20px;
+}
+.our-programs-reg-btn{
+    font-family: "Poppins";
+    font-size:14px;
+    font-weight:700;
+    background-image: linear-gradient(to left,rgb(255, 113, 113,0.8),rgb(229, 63, 101,0.8));
+    color:white;
+    border-width:0px;
+    border-radius:8px;
+    padding:10px 30px;
+    cursor: pointer;
+}
+.programs-pagination{
+    padding-top:20px;
+    align-self:flex-end;
+}
+.fiitjee-section{
+    /* background-image: linear-gradient(to right,#4357C4,#3950A7,#2C4784); */
+    background-image: linear-gradient(to right,#2C4784,#4357C4);
+    margin:100px 50px;
+    border-radius:15px;
+    padding:35px 20px;
+    display:flex;
+    align-items:Center;
+    justify-content:space-between;
+}
+.number-container{
+    position: relative;
+    
+}
+.ribbon-image{
+    width: 25px;
+    height: 60px;
+}
+.for-head{
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    content: "";
+    font-size: 11px;
+    color: #ffff;
+    max-width: 30px;
+    font-family: "Montserrat";
+}
+.num-shadow{
+    position: absolute;
+    content: "";
+    top: -45%;
+    left: 35%;
+    font-size: 90px;
+    font-weight: 700;
+    color: rgb(44, 44, 44,0.4);
+    font-family: "Aileron";
+}
+.number{
+    color: #FFE762;
+    position: absolute;
+    content: "";
+    top: -40%;
+    left: 35%;
+    font-size: 90px;
+    font-weight: 700;
+    font-family: "Aileron";
+}
+.cap-image{
+    position: absolute;
+    content: "";
+    top: -35%;
+    left: 38%;
+}
+.small-pill{
+    position: absolute;
+    content: "";
+    top: 45%;
+    left: 70%;
+    background-color: #ffff;
+    padding: 3px 8px;
+    font-size: 7px;
+    border-radius: 10px;
+    color: #4357C4;
+    font-family: "Aileron";
+}
+.year-title{
+    font-family: "Montserrat";
+    font-size: 17px;
+    color: #FFFFFF;
+    max-width: 100px;
+}
+.fiitjee-main-head{
+    font-family:"Poppins";
+    font-size: 82px;
+    font-weight:300;
+    color: #D91316;
+    background-color: #FFE762;
+    padding: 0px 0px 5px 5px;
+    margin:0;
+}
+.fiitjee-rank-info-head-1{
+    font-family:"Panton";
+    font-weight:300;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+.fiitjee-rank-info-head-2{
+    font-family:"Panton";
+    font-weight:300;
+    font-size: 36px;
+    color: #FFE762;
+    margin: 0px;
+}
+.fiitjee-rank-info-head-3{
+    font-family:"Panton";
+    font-weight:300;
+    font-size: 27px;
+    color: #ffff;
+    margin: 0px;
+}
+.fiitjee-rank-info-para-1{
+    font-family:"Montserrat";
+    font-weight:700;
+    font-size: 10px;
+    color: #E81818;
+    background-color: #FFFFFF;
+    padding: 3px 10px;
+    width:250px;
+}
+/* .image-container{
+    position:relative;
+    width:257px;
+} */
+
+/* .magazine-img{
+   position:absolute;
+   right:10px;
+   top:-45px;
+} */
+.magazine-img{
+    width:150px;
+    height:150px;
+}
+
+.results-section{
+    background-image:linear-gradient(rgb(196, 212, 217,0.3),rgb(187, 221, 222,0.3));
+    padding:80px 0px;
+}
+.results-main-head{
+    font-family:"Poppins";
+    font-size:16px;
+    font-weight:700;
+    margin:0;
+    padding-left:70px;
+}
+.results-head{
+    font-family:"Poppins";
+    font-size:40px;
+    font-weight:300;
+    margin:0;
+    padding-right:30px;
+}
+.years{
+    background-color: white;
+    padding:6px 15px;
+    border-width:0px;
+    border-radius:8px;
+    font-family:"Poppins";
+    font-size:24px;
+    font-weight:400;
+}
+.results-top-container{
+    padding:0px 30px 40px 70px;
+    display:flex;
+    justify-content:space-between;
+}
+.results-yearwise-container{
+    display:flex;
+    align-items:center;
+}
+.courses-section{
+    list-style-type:none;
+    padding-left:0;
+    display:flex;
+}
+.courses-section .course-item+.course-item{
+    padding-left:20px;
+}
+.course{
+    text-decoration:none;
+    color:#2F2F2F;
+    font-family: "Poppins";
+    font-weight:400;
+    font-size:16px;
+    position:relative;
+}
+.course::after{
+    position:absolute;
+    content:"";
+    background-color: #707070;
+    opacity:0.4;
+    width:120%;
+    top:110%;
+    left:-7px;
+    height:2px;
+}
+.course:hover::after{
+    opacity:1;
+}
+.course:hover.course{
+    font-weight:700;
+}
+.ranks-details-container{
+    display:flex;
+}
+.ranks-details{
+    background-color:#E62D4E;
+    padding:46px 40px 30px 50px;
+    border-radius:0px 20px 20px 0px;
+    margin-right:20px;
+    align-self: flex-start;
+}
+.ranks-title{
+    font-family: "Poppins";
+    font-size:22px;
+    font-weight:700;
+    color:white;
+}
+.ranks{
+    color:white;
+    font-family: "Poppins";
+    font-size:19px;
+    font-weight:400;
+    margin:0px 0px 10px 0px;
+}
+.ranks-more-btn{
+    font-family: "Poppins";
+    font-size:20px;
+    font-weight:400;
+    background-color:white;
+    border-radius:8px;
+    padding:5px 4px;
+    border-width:0px;
+    margin-top:10px;
+    cursor:pointer;
+}
+.rankers-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+.rank-cards{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+}
+.rank-cards .rank-card+.rank-card{
+    margin-left:15px;
+   
+}
+.rank-card{
+    background-color: white;
+    padding:80px 20px 40px 25px;
+    border-radius:20px;
+    position:relative;
+    width:196px;
+    height:164px;
+    margin-bottom:45px;
+}
+.ranker-image{
+    position: absolute;
+    top:-13%;
+    left:9%;
+}
+.rank-card-head{
+    font-family: "Poppins";
+    font-size:32px;
+    font-weight:700;
+    margin:20px 0px 0px 0px;
+}
+.ranker-name{
+    font-family: "Poppins";
+    font-size:22px;
+    font-weight:400;
+    margin:0; 
+}
+.rank-card-desc{
+    font-family: "Poppins";
+    font-size:14px;
+    font-weight:400; 
+}
+.results-pagination{
+    /* text-align: center; */
+    margin-top:20px;
+}
+
+.connect-section{
+    padding:97px 150px 180px 150px;
+}
+.connect-img-container{
+    display:flex;
+    justify-content: flex-end;
+    align-items:flex-start;
+    /* padding:97px 150px; */
+    position:relative;
+    box-sizing:border-box;
+}
+.connect-img{
+    width:530px;
+    height:380px;
+}
+.connect-desc-container{
+    box-sizing:border-box;
+    width:530px;
+    height:380px;
+    background-color: #673592;
+    border-radius:20px;
+    padding:35px 20px 57px 60px;
+    position:absolute;
+    top:35%;
+    left:16%;
+}
+.connect-head{
+    font-family:"Poppins";
+    font-size:40px;
+    font-weight:700;
+    color:white;
+    margin:0;
+}
+.connect-desc{
+    font-family:"Poppins";
+    font-size:20px;
+    font-weight:400;
+    color:white;
+    padding:0px 0px 25px 0px;
+    margin:0;
+}
+.connect-now-btn{
+    color:#673592;
+    border-width:0px;
+    border-radius:10px;
+    padding:10px 25px;
+    cursor:pointer;
+
+}
+.testimonials-section{
+    background-image:linear-gradient(#F3F9FB,#F7F6F4);
+    padding:100px 90px 120px 90px;
+    /* display:flex;
+    flex-direction: column;
+    align-items:center; */
+}
+.testimonials-container{
+    display: flex;;
+}
+
+.testimonial-categories{
+    display:flex;
+    justify-content: space-between;;
+    align-items:center;
+}
+.testimonials-main-head{
+    font-family: "Poppins";
+    font-size:16px;
+    font-weight:700;
+    margin:0;
+}
+.testimonial-types .testimonial-category+.testimonial-category{
+    padding-left:15px;
+}
+.testimonial-category{
+    color:#2F2F2F;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size:16px;
+    font-weight:400;
+    margin-bottom:20px;
+}
+.testimonial-category:hover{
+    font-weight:700;
+    font-size:26px;
+}
+.testimonials-container .testimonial-card{
+    margin-right:20px;
+    margin-top:20px;
+}
+.testimonials-btn-container{
+    text-align: center;
+}
+.testimonials-btn{
+    color:white;
+    font-family: "Poppins";
+    font-size:20px;
+    font-weight:400;
+    background-color: #2F2F2F;
+    border-width:0px;
+    border-radius:8px;
+    padding:10px 35px;
+    margin-top:45px;
+    cursor:pointer;
+}
+.testimonial-caption{
+    max-width:375px;
+    font-family: "Poppins";
+    font-size:40px;
+    font-weight:300;
+    margin:0px 0px 15px 0px;
+}
+.testimonial-card{
+    background-color: white;
+    border-radius:8px;
+    padding:25px 10px 25px 20px;
+    width:341px;
+    height:270px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.testimonial-desc{
+    font-family: "Poppins";
+    font-size:15px;
+    font-weight:400;
+}
+.testimony-details{
+    display:flex;
+    align-items:center;
+}
+.testimony-name-container{
+    margin-left:15px;
+}
+.testimony-name{
+    font-family: "Poppins";
+    font-size:15px;
+    font-weight:400;
+    margin:0;
+}
+.testimony-rank{
+    font-family: "Poppins";
+    font-size:15px;
+    font-weight:700;
+    margin:0;
+}
+.blogs-section{
+    background-image: linear-gradient(rgb(239, 179, 193,0.3),rgb(255, 226, 208,0.3));
+    background-position: cover;
+    padding:110px 80px;
+    
+}
+.blog-main-head{
+    font-family:"Poppins";
+    font-size:16px;
+    font-weight:700;
+    text-align: center;
+    margin:0;
+}
+.blog-head{
+    font-family:"Poppins";
+    font-size:40px;
+    font-weight:300;
+    text-align: center;
+    margin:0px 0px 20px 0px;
+}
+.blogs-container{
+    display:flex;
+    justify-content: center;
+    margin-left:20px;
+}
+.blogs-container .blog+.blog{
+    margin-left:20px;
+}
+.blog-1{
+    display:flex;  
+    margin:0px 0px 25px 0px;
+}
+.blog-1-image{
+    width:300px;
+    height:330px;
+}
+.blog-1-desc-container{
+    box-sizing:border-box;
+    background-color: white;
+    /* width:330px; */
+    width:300px;
+    height:330px;
+    padding:25px 35px;
+}
+.blog-1-date{
+    font-family:"Poppins";
+    font-size:12px;
+    font-weight:700;
+}
+.blog-1-head{
+    font-family:"Poppins";
+    font-size:20px;
+    font-weight:400;
+}
+.blog-1-desc{
+    font-family:"Poppins";
+    font-size:15px;
+    font-weight:400;
+}
+.blog-2{
+    display:flex;
+    margin-bottom:25px;
+    width:515px;
+    height:150px;
+}
+/* .blog-2-image,.blog-3-image{
+    width:170px;
+    height:180px;
+} */
+.blog-2-desc-container{
+    background-color:white;
+    padding:20px 30px;
+}
+.blog-2-desc{
+    font-family:"Poppins";
+    font-size:18px;
+    font-weight:400;
+    margin:0px 0px 15px 0px;
+}
+.blog-3{
+    display:flex;
+    width:515px;
+    height:150px;
+}
+.blog-3-desc-container{
+    background-color:white;
+    padding:20px 30px;
+}
+.blog-3-desc{
+    font-family:"Poppins";
+    font-size:18px;
+    font-weight:400;
+    margin:0px 0px 15px 0px;
+}
+.explore-btn{
+    text-align: center;
+    cursor:pointer;
+}
+.blog-btn{
+    font-family:"Poppins";
+    font-size:20px;
+    font-weight:400;
+    padding:10px 25px;
+    background-color: #2F2F2F;
+    border-width:0px;
+    border-radius:8px;
+    color:white;
+    margin-top:40px;
+    cursor:pointer;
+}
+.contact-us-section{
+    background-image:linear-gradient(#FAF3EE,#FFFFFF) ;
+    padding:30px 130px 120px 130px;
+    
+}
+.contact-us-form{
+    background-color:white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius:20px;
+    padding:70px 130px 80px 130px;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.contact-main-head{
+    font-family:"Poppins";
+    font-size:16px;
+    font-weight:700;
+    margin:0;
+}
+.contact-head{
+    font-family:"Poppins";
+    font-size:40px;
+    font-weight:300;
+    margin:0;
+}
+.contact-para{
+    font-family:"Poppins";
+    font-size:18px;
+    font-weight:400;
+    max-width:634px;
+}
+.name{
+    width:300px;
+    padding:16px 0px 15px 20px;
+    border-radius:15px;
+    border:1px solid rgb(112, 112, 112,0.5);
+    margin-right:15px;
+    margin-bottom:10px;
+}
+.mobile{
+    width:300px;
+    padding:16px 0px 15px 20px;
+    border-radius:15px;
+    border:1px solid rgb(112, 112, 112,0.5);
+    margin-bottom:10px;
+}
+.mail{
+    width:398px;
+    padding:16px 0px 15px 20px;
+    border-radius:15px;
+    border:1px solid rgb(112, 112, 112,0.5);
+    margin-right: 15px;
+    margin-bottom:10px;
+}
+.current-class{
+    width:200px;
+    padding:16px 0px 15px 20px;
+    border-radius:15px;
+    border:1px solid rgb(112, 112, 112,0.5);
+    margin-bottom:10px;
+}
+.message{
+    padding:16px 0px 40px 20px;
+    width:638px;
+    border-radius:15px;
+    border:1px solid rgb(112, 112, 112,0.5);
+}
+.contact-us-btn{
+    /* text-align:center; */
+    margin-top:20px;
+    
+}
+::placeholder{
+    font-family:"Poppins";
+    font-size:20px;
+    font-family:400;
+}
+.send-btn{
+    background-color:#2F2F2F;
+    color:white;
+    padding:8px 80px;
+    border-radius:8px;
+    border-width:0px;
+    cursor:pointer;
+}
+
+.centers-section{
+    background-color: #42226E;
+    padding:50px 100px 80px 100px;
+    display:flex;
+}
+
+.center-head{
+    font-family: "Poppins";
+    font-size:40px;
+    font-weight: 400;
+    margin:0;
+    color:white;
+}
+.center-desc{
+    font-family: "Poppins";
+    font-size:22px;
+    font-weight: 400;
+    margin:0px 0px 20px 0px;
+    color:white;
+}
+.check-btn{
+    background-color:white;
+    border-width:0px;
+    border-radius:8px;
+    padding:8px 30px;
+    font-family: "Poppins";
+    font-size:20px;
+    font-weight: 400;
+    color:#2F2F2F;
+    cursor:pointer;
+}
+.horizontal-line{
+    border:1px solid rgb(255, 255, 255,0.4)
+}
+.cities-head{
+    color:white;
+    font-family:"Poppins";
+    font-size:22px;
+    font-weight:400;
+}
+.cities-container{
+    display:flex;
+    align-items: center;
+    padding-top:10px;
+}
+.cities-container .city+.city{
+    margin-left:30px;
+}
+.city-img{
+    height:60px;
+}
+.city-name{
+    color:white;
+    font-family:"Poppins";
+    font-size:16px;
+    font-weight:700;
+}
+.centers-cities-section{
+    padding:80px 90px 120px 90px;
+    background-color: rgb(224, 224, 224,0.1);
+}
+.centers-top-container{
+    display: flex;
+    justify-content: space-between;
+}
+.centers-cities-main-head{
+    font-family:"Poppins";
+    font-size:16px;
+    font-weight:700;
+    margin:0;
+}
+.centers-cities-head{
+    font-family:"Poppins";
+    font-size:40px;
+    font-weight:400;
+    margin:0px 0px 20px 0px;
+    color:#707070;
+}
+.categories-container{
+    list-style-type: none;
+    padding-left:0;
+    display:flex;
+}
+.category-link{
+    position:relative;
+}
+.category-link::after{
+    position: absolute;
+    content:"";
+    background-color: #707070;
+    opacity:0.4;
+    top:140%;
+    left:-10px;
+    width:150%;
+    height:2px;
+}
+.category-link:hover::after{
+    opacity:1;
+}
+.category-link:hover.category{
+    font-weight:700;
+}
+
+.category{
+    text-decoration:none;
+    color:#2F2F2F;
+    font-family:"Poppins";
+    font-size:16px;
+    font-weight:400;
+}
+.categories-container .category-item+.category-item{
+    padding-left:35px;
+}
+.filters{
+    background: white;
+    padding:5px 15px 8px 15px;
+    border-radius:8px;
+    border-width:0px;
+    font-family:"Poppins";
+    font-size:16px;
+    font-weight:400;
+
+}
+.national-cities{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style-type: none;
+}
+.national-cities .city-btn{
+    padding:15px 35px;
+    background-color:transparent;
+    border-radius:2rem;
+    border:1px solid #707070;
+    font-family:"Poppins";
+    font-size:16px;
+    font-weight:400;
+    cursor:pointer;
+}
+
+.national-cities .city-item{
+    margin:0px 15px 10px 0px;
+}
+.footer-section{
+    background-image:linear-gradient(rgb(154, 154, 154,0.1),rgb(255, 255, 255,0.1));
+    padding:90px 100px 30px 100px;
+}
+.footer-container{
+    display:flex;
+    justify-content: space-between;
+}
+.footer-container .link-container+.link-container{
+    margin-left:20px;
+}
+.link-container{
+    width:200px;
+}
+.links-list{
+    list-style-type: none;
+    padding-left:0;
+}
+.footer-link{
+    text-decoration: none;
+    color:#2F2F2F;
+    font-family:"Poppins";
+    font-size:11px;
+    font-weight:400;
+}
+.footer-head{
+    font-family: "Poppins";
+    font-size:16px;
+    font-weight:bold;
+    position:relative;
+    
+}
+.footer-head::after{
+    position:absolute;
+    content: "";
+    border-bottom:1px solid rgb(224, 224, 224,0.4);
+    width:70%;
+    height:1px;
+    top:120%;
+    left:0;
+}
+.copyright-section{
+    display:flex;
+    justify-content: space-between;
+    padding:15px 0px;
+}
+.copy-right{
+    font-family: "Poppins";
+    font-size:13px;
+    font-weight:400;
+}
+.footer-icon{
+    background:#2F2F2F;
+    padding:6px;
+    border-radius:40px;
+    color:#FFFFFF;
+    text-decoration: none;
+    font-size:20px;
+}
+.menu{
+    display:none;
+}
+.menu-bar{
+    font-size:25px;
+    background-color: transparent;
+    margin-left:15px;
+    border:none;
+    cursor:pointer;
+}
+@media screen and (max-width:1320px){
+    .banner-img{
+        height:300px;
+        width:300px;
+    }
+    .outer-circle { 
+        height: 1050px;
+        width: 1050px;
+       
+    }
+    .inner-circle1 {
+        height: 850px;
+        width: 850px;
+        top: 24%;
+        left: 24%;
+      
+    }
+    .inner-circle2 {
+        height: 650px;
+        width: 650px;
+        top: 33%;
+        left: 33%;
+
+    }
+    .inner-circle3 {
+      
+        height: 450px;
+        width: 450px;
+        top: 43%;
+        left: 43%;
+    }
+    .inner-circle4 {
+        height: 250px;
+        width: 250px;
+        top: 52%;
+        left: 52%;
+      
+    }
+    .inner-circle5 {
+        height: 150px;
+        width: 150px;   
+        top: 57%;
+        left: 57%;
+    }
+    .education-head {
+        font-size: 55px;
+        max-width: 800px;
+    }
+    .maths-img {
+        top: 32%;
+        left: 32%;
+    }
+    .pencil-img{
+        top: 30%;
+        left: 61%;
+    }
+    .react-img {
+        top: 43%;
+        left: 8%;
+    }
+    .video-img {
+        top: 50%;
+        right: 6%;
+    }
+    .books-img {
+        top: 66%;
+        left: 22%;
+    }
+    .bluecap-img{
+        top: 63%;
+        right: 42%;
+    }
+    .admission-head{
+        font-size:28px;
+    }
+    .tests-cards{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .tests-cards .test-card+.test-card{
+            margin-left:0px;
+    }
+    .tests-cards .test-card{
+        margin:0px 20px 15px 0px;
+    }
+    .results-head{
+        font-size:30px;
+        padding-right:5px;
+    }
+    .years{
+        font-size:18px;
+        padding:5px;
+    }
+    .courses-section .course-item+.course-item{
+        padding-left: 5px;
+    }
+    .rank-cards{
+        flex-wrap:wrap;
+    }
+    .rank-card{
+        margin-bottom:45px;
+    }
+    .testimonials-container{
+        flex-wrap:wrap;
+        
+    }
+    .testimonial-card{
+        width:365px;
+    }
+    .blogs-container{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .centers-section{
+       
+        padding: 50px 30px 80px 30px;
+       
+    }
+    .cities-desc-container{
+        margin-left:10px;
+    }
+}
+@media screen  and (max-width:1024px){
+    .contact-btn{
+        padding:5px;
+        font-size:12px;
+    }
+    .logo{
+        width:100px;
+        height:40px;
+    }
+    .nav-link{
+        font-size:11px;
+    }
+    .navlinks .nav-link+.nav-link{
+        margin-left:5px;
+    }
+    .banner-desc{
+        font-size:35px;
+    }
+    .banner-img{
+        height:300px;
+        width:300px;
+    }
+    .education-section{
+        margin:-75px  0px;
+    }
+    .outer-circle {  
+        height: 700px;
+        width: 700px;   
+    }
+    .inner-circle1 {
+        height: 600px;
+        width: 600px;
+        top: 28%;
+        left: 28%;  
+    }
+    .inner-circle2 {
+        height: 500px;
+        width: 500px;
+        top: 35%;
+        left: 35%;
+    }
+    .inner-circle3 {
+        height: 400px;
+        width: 400px;
+        top: 42%;
+        left: 42%;
+    }
+    .inner-circle4 {
+        height: 300px;
+        width: 300px;
+        top: 49%;
+        left: 49%;
+    }
+    .inner-circle5 {
+        height: 200px;
+        width: 200px;
+        top: 56%;
+        left: 56%;
+    }
+    .education-head {
+        top: 38%;
+        left: 9%;
+        font-size: 30px;
+        max-width: 561px;
+     
+    }
+    .maths-img {
+      
+        top: 22%;
+        left: 30%;
+    }
+    .pencil-img {
+     
+        top: 24%;
+        left: 64%;
+    }
+    .react-img {
+     
+        top: 37%;
+        left: 5%;
+    }
+    .video-img {
+   
+        top: 42%;
+        right: 4%;
+    }
+    .books-img {
+     
+        top: 66%;
+        left: 18%;
+    }
+    .bluecap-img{
+      
+        top: 63%;
+        right: 42%;
+    }
+    .pendal-img{
+        top: 72%;
+        right: 12%;
+    }
+    .cards-container{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .cards-container .program-card+.program-card{
+      
+        margin-left: 0px;
+    } 
+    .cards-container .program-card{
+        margin-bottom:15px;
+        margin-right:15px;
+    }
+    .about-fiitjee-section{
+        padding:40px 35px;
+        flex-wrap:wrap;
+        justify-content: center;
+        
+    }
+    .about-fiitjee{
+        margin-bottom:20px;
+        margin-right:20px;
+        padding:25px 15px;
+    }
+    
+    .about-fiitjee-image{
+        height:200px;
+        width:300px;
+    }
+    .admission-tests-section{
+        padding:40px 25px;
+    }
+    .admission-main-head{
+        text-align:center;
+    }
+    .pages-container{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+    .tests-cards{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .tests-cards .test-card+.test-card{
+            margin-left:0px;
+    }
+    .tests-cards .test-card{
+        margin:0px 20px 15px 0px;
+    }
+    .why-fiitjee-section{
+        padding:25px 30px;
+        background-position: center;
+        background-size:cover;
+    }
+    .our-programs-section{
+        padding:40px 20px;
+    }
+    .our-programs-container{
+       flex-wrap:wrap;
+       justify-content: center;
+    }
+    .our-programs-card{
+        width:400px;
+    }
+    .our-programs-container .our-programs-card+.our-programs-card{
+        margin-left:0px;
+    }
+    .our-programs-container .our-programs-card{
+        margin-top:25px;
+    }
+    /* .our-programs-main-head{
+        text-align: center;
+    }
+    .our-programs-head{
+        text-align: center;
+    } */
+    .year-title{
+        font-size:12px;
+    }
+    .fiitjee-main-head{
+        font-size:30px;
+    }
+    .results-top-container{
+        justify-content: space-around;
+        padding:15px 10px;
+    }
+    .results-head{
+        font-size:30px;
+        padding-right:5px;
+    }
+    .years{
+        font-size:18px;
+        padding:5px;
+    }
+    /* .courses-section{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    } */
+    .courses-section .course-item+.course-item{
+        padding-left: 5px;
+    }
+    .course{
+        font-size:12px;
+    }
+    .ranks-details-container{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .rankers-container{
+        margin:50px 10px;
+    }
+    .rank-cards{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .rank-cards .rank-card+.rank-card{
+        margin-left:0px;
+    }
+    .rank-cards .rank-card{
+        margin:0px 15px 45px 0px;
+    }
+    .connect-section{
+        padding:40px 10px 150px 10px;
+    }
+    /* .testimonials-section{
+        padding:50px 25px;
+    } */
+    .testimonials-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .testimonial-caption{
+        text-align: center;
+        max-width:480px;
+    }
+    .testimonial-card{
+        width:550px;
+    }
+    .blogs-container{
+        flex-direction:column;
+        align-items:center;
+        margin-left:0px;
+    }
+    .contact-us-section{
+        padding:50px 30px;
+    }
+    .contact-us-form{
+        padding:25px 15px;
+    }
+  
+    .centers-section{
+        padding:30px 20px;
+        flex-direction: column;
+        align-items:center;
+      
+    }
+    .centers-info{
+        text-align:center;
+    }
+    .cities-container{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .cities-head{
+        text-align:center;
+    }
+    .centers-top-container{
+        flex-direction:column;
+        align-items:center;
+    }
+    .footer-section{
+        padding:30px 20px;
+    }
+    .footer-container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .footer-container .link-container+.link-container {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .menu{
+        display:block;
+    }
+    .logo{
+        width:80px;
+        height:30px;
+    }
+    .contact-btn{
+        padding:5px;
+    }
+    .search-container{
+        display:flex;
+        align-items:center;
+    }
+    .navbar-nav{
+        justify-content:space-between;
+    }
+    .navlinks{
+        background: black;
+        padding:10px;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        position:fixed;
+        top:66px;
+        left:-13px;
+        margin-left:0;
+    }
+    .navlinks .nav-link{
+        display:block;
+        padding:10px 0;
+        color:#FFFFFF;
+    }
+    .banner-container{
+        flex-direction:column;
+        align-items: center;
+    }
+    .hide{
+        display:none;
+    }
+    .banner-desc{
+        font-size:30px;
+    }
+    .banner-img{
+        height:350px;
+        width:300px;
+    }
+    .education-section{
+        margin:-90px 0px;
+    }
+    .outer-circle {
+        height: 500px;
+        width: 500px;
+        position: relative;
+        z-index: -1;
+      
+      }
+      .inner-circle1 {
+        height: 400px;
+        width: 400px;
+        top: 39%;
+        left: 39%;
+    }
+    .inner-circle2 {
+        height: 300px;
+        width: 300px;
+        top: 49%;
+        left: 49%;
+    }
+    .inner-circle3 {
+        height: 200px;
+        width: 200px;
+        top: 58%;
+        left: 58%;
+    }
+    .inner-circle4 {
+        height: 100px;
+        width: 100px;
+        top: 67%;
+        left: 67%;
+    }
+    .inner-circle5 {
+        height: 60px;
+        width: 60px;
+        top: 71%;
+        left: 71%;
+    }
+    .education-head {
+        top: 37%;
+        left: 12%;
+        font-size: 25px;
+        max-width: 399px;
+    }
+    .maths-img{
+        top: 29%;
+        left: 30%;
+        width:50px;
+    }
+    .pencil-img {
+        top: 29%;
+        left: 58%;
+        width:50px;
+    }
+    .react-img { 
+        top: 43%;
+        left: 6%;
+        width:50px;
+    }
+    .video-img {
+        top: 50%;
+        right: 6%;
+        width:50px;
+    }
+    .books-img{
+      
+        top: 66%;
+        left: 15%;
+        width:50px;
+    }
+    .bluecap-img {
+       
+        top: 67%;
+        right: 39%;
+        width:60px;
+    }
+    .pendal-img {
+        top: 72%;
+        right: 14%;
+        width:50px;
+    }
+    
+    .cards-container{
+        /* flex-direction:column;
+        align-items:center; */
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .cards-container .program-card+.program-card{
+      
+        margin-left: 0px;
+    } 
+    .cards-container .program-card{
+        margin-bottom:15px;
+        margin-right:15px;
+    }
+    .about-fiitjee-section{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding:20px 5px;
+    }
+    .about-fiitjee{
+        width:450px;
+        margin-bottom:20px;
+        padding:25px 15px;
+    }
+    .about-fiitjee-image{
+        height:150px;
+        width:200px;
+    }
+    .admission-tests-section{
+        padding:15px 10px;
+    }
+    .admission-main-head{
+        text-align:center;
+    }
+    .pages-container{
+        flex-direction:column;
+        align-items:center;
+    }
+    .tests-cards{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .tests-cards .test-card+.test-card{
+            margin-left:0px;
+    }
+    .tests-cards .test-card{
+        margin:0px 20px 15px 0px;
+    }
+    .why-fiitjee-section{
+        padding:15px 15px;
+        background-position: center;
+        background-size:cover;
+    }
+    .our-programs-section{
+        padding:15px 10px;
+    }
+    .our-programs-container{
+        flex-direction:column;
+        align-items:center;
+    }
+   
+   
+    .our-programs-card{
+        width:350px;
+    }
+    .our-programs-container .our-programs-card+.our-programs-card{
+        margin-left:0px;
+    }
+    .our-programs-container .our-programs-card{
+        margin-top:25px;
+    }
+    .programs-pagination{
+        align-self:center;
+    }
+    .fiitjee-section{
+        flex-direction:column;
+    }
+    .fiitjee-main-head{
+        font-size:30px;
+    }
+    
+    .fiitjee-rank-info-head-1{
+        font-size:15px;
+    }
+    .fiitjee-rank-info-head-2{
+        font-size:22px;
+    }
+    .fiitjee-rank-info-head-3{
+        font-size:18px;
+    }
+    .fiitjee-rank-info-para-1{
+        width:200px;
+    }
+    
+    .courses-section{
+        flex-direction:column;
+    }
+    .results-main-head{
+        text-align: center;
+    }
+    .results-top-container{
+        flex-direction:column;
+        padding:10px 5px;
+        align-items: center;
+    }
+    .courses-section .course-item+.course-item{
+        padding-left:0px;
+        margin-top:10px;
+    }
+    .ranks-details-container{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .rankers-container{
+        margin:50px 10px;
+    }
+    .rank-cards{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .rank-cards .rank-card+.rank-card{
+        margin-left:0px;
+    }
+    .rank-cards .rank-card{
+        margin:0px 15px 45px 0px;
+    }
+    .connect-section{
+        padding:25px 10px 150px 10px;
+    }
+    
+    .connect-img{
+        width:400px;
+        height:300px;
+    }
+    .connect-desc-container{
+        width:400px;
+        height:300px;
+        left:5%;
+        padding:15px 20px;
+    }
+    .connect-head{
+        font-size:30px;
+    }
+    .testimonials-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .testimonial-caption{
+        text-align: center;
+        max-width:480px;
+    }
+    .testimonial-card{
+        width:480px;
+    }
+    .blogs-section{
+        padding:50px 20px;
+    }
+    .blogs-container{
+        flex-direction:column;
+        align-items:center;
+        margin-left:0px;
+    }
+    .blog-1-image{
+        width:270px;
+    }
+    .blog-1-desc-container{
+        width:270px;
+    }
+    .blog-1-head{
+        font-size:18px;
+    }
+    .contact-us-section{
+        padding:30px 20px;
+    }
+    .contact-us-form{
+        padding:25px 15px;
+    }
+    .message{
+        width:450px;
+    }
+    .centers-section{
+        padding:30px 20px;
+        flex-direction: column;
+        align-items:center;
+    }
+    .centers-info{
+        text-align:center;
+    }
+    .cities-container{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .cities-head{
+        text-align:center;
+    }
+    .centers-top-container{
+        flex-direction:column;
+        align-items:center;
+    }
+    .footer-section{
+        padding:30px 20px;
+    }
+    .footer-container{
+        flex-wrap: wrap;
+    }
+    .footer-container .link-container+.link-container {
+        margin-left: 0px;
+    }
+    .copyright-section{
+        flex-direction:column;
+        align-items:center;
+     
+       
+    }
+    .footer-icons-container{
+        padding-top:20px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:576px){
+    .banner-container{
+        display:flex;
+        flex-direction:column;
+    }
+    .banner-list{
+        width:290px;
+    }
+    .banner-list-item{
+       
+        font-size:10px;
+      
+    }
+    .banner-img{
+        width:250px;
+        height:280px;
+    }
+    .education-section{
+        margin:-50px 0px;
+    }
+    .outer-circle {
+        height: 300px;
+        width: 300px;
+        position: relative;
+        z-index: -1;
+    }
+    .inner-circle1 {
+        height: 250px;
+        width: 250px;
+        top: 58%;
+        left: 58%;
+    }
+    .inner-circle2 {
+        height: 200px;
+        width: 200px;
+        top: 67%;
+        left: 67%;
+    }
+    .inner-circle3 {
+        height: 150px;
+        width: 150px;
+        top: 75%;
+        left: 75%;
+    }
+    .inner-circle4 {
+        height: 100px;
+        width: 100px;
+        top: 83%;
+        left: 83%;
+    }
+    .inner-circle5 {
+        height: 50px;
+        width: 50px;
+        top: 91%;
+        left: 91%;
+    }
+    .maths-img {
+        top: 29%;
+        left: 30%;
+        width:25px;
+        height: 25px;
+    }
+    .pencil-img {
+        top: 27%;
+        left: 60%;
+        width:25px;
+        height: 25px;
+    }
+    .react-img{ 
+        top: 43%;
+        left: 6%;
+        width:25px;
+        height: 25px;
+    }
+    .video-img {
+        top: 50%;
+        right: 6%;
+        width:25px;
+        height: 25px;
+    }
+    .books-img {
+        top: 66%;
+        left: 19%;
+        width:25px;
+        height: 25px;
+    }
+    .bluecap-img { 
+        top: 67%;
+        right: 39%;
+        width:25px;
+        height: 25px;
+    }
+    .pendal-img {
+        top: 72%;
+        right: 14%;
+        width:25px;
+        height: 25px;
+    }
+    .education-head{
+        left:7%;
+        font-size:16px;
+    }
+   
+    .about-fiitjee{
+        width:270px;
+    }
+    .our-programs-card{
+        width:240px;
+    }
+    .fiitjee-section{
+        display:flex;
+        flex-direction:column;
+    }
+    .connect-img{
+        width:200px;
+        height:160px;
+    }
+    .connect-desc-container{
+        width:200px;
+        height:160px;
+    }
+    
+    .connect-head{
+        font-size:18px;
+    }
+    .connect-desc{
+        font-size:12px;
+        padding-bottom:8px;
+    }
+    .connect-now-btn{
+        padding:5px;
+    }
+    .testimonials-section{
+        padding:50px 15px;
+    }
+    .testimonial-card{
+        width:250px;
+    }
+    .testimonial-caption{
+        font-size:20px;
+    }
+    .testimonials-btn{
+        font-size:10px;
+        padding:10px 5px;
+    }
+    .blog-head {
+       
+        font-size: 30px;
+      
+    }
+    .blogs-container{
+        flex-wrap:nowrap;
+    }
+    .blog-1-head{
+        font-size:12px;
+        margin:0;
+    }
+    .blog-1-desc{
+        font-size:8px;
+    }
+    /* .blog-1{
+        flex-direction:column;
+    } */
+    /* .blog-2{
+        flex-direction:column;
+    }
+    .blog-3{
+        flex-direction:column;
+    } */
+    .blog-1-image{
+        width:145px;
+        height:200px;
+    }
+    .blog-1-desc-container{
+        width:145px;
+        height:200px;
+        padding:5px;
+    }
+    .blog-2{
+        width:200px;
+    }
+    .blog-2-image{
+        width:80px;
+        height:149px;
+    }
+    .blog-2-desc-container{
+        padding:5px;
+    }
+    .blog-2-desc{
+        font-size:12px;
+    }
+    .blog-3{
+        width:200px;
+    }
+    .blog-3-image{
+        width:80px;
+        height:149px;
+    }
+    .blog-3-desc-container{
+        padding:5px;
+    }
+    .blog-3-desc{
+        font-size:12px;
+    }
+    .contact-us-section{
+        padding:30px 5px;
+    }
+    .contact-us-form{
+        padding:20px 5px;
+    }
+    .contact-head{
+        font-size:22px;
+    }
+    .name{
+        width:200px;
+    }
+    .mobile{
+        width:200px;
+    }
+    .mail{
+        width:200px;
+    }
+    .current-class{
+        width:200px;
+    }
+    .message{
+        width:200px;
+    }
+    .send-btn{
+        padding:8px 15px
+    }
+    .national-cities .city-btn{
+        font-size:12px;
+        padding:8px 5px;
+    }
+    .categories-container .category-item+.category-item {
+        padding-left: 10px;
+    }
+    .filters {
+       
+        padding: 5px; 
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:406px) and (max-width:576px){
+    .connect-img{
+        width:300px;
+        height:200px;
+    }
+    .connect-desc-container{
+        width:300px;
+        height:200px;
+    }
+}
